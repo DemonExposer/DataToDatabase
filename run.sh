@@ -1,6 +1,5 @@
 #!/bin/bash
-git clone https://github.com/MartMonster/DataToDatabase
-cd DataToDatabase/src
+cd src
 javac *.java
 jar cfe Seeder.jar DatabaseManager *.class
 rm *.class
