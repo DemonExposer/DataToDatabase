@@ -59,7 +59,7 @@ public class DatabaseManager {
 
 		File sql = new File("properties.sql");
 
-		String[] statements = FileInteraction.read(sql).split("\r\n\r\n");
+		String[] statements = FileInteraction.read(sql).split("\n\n");
 
 		int counter = 0;
 		String[] s = statements[0].split(";");
